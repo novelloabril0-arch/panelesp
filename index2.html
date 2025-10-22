@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanelESP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">ESP</div>
+    <div>
+      <div class="title">PanelESP</div>
+      <div class="subtitle">Controla tu ESP8266 — ingresa la IP y prueba conexión</div>
+    </div>
+  </header>
+
+  <div class="card">
+    <label>IP del ESP8266</label>
+    <div class="row">
+      <input id="espIp" type="text" value="10.0.8.12">
+      <button id="btnPing">Probar conexión</button>
+      <span id="connStatus" class="status off">❌ Sin conexión</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">Salidas / Relays</div>
+    <div id="outputs" class="controls"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
